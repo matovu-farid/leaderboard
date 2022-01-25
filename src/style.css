@@ -1,59 +1,60 @@
 body {
-    width: 100vw;
+  width: 100vw;
 }
-main {
-    display: flex;
-    flex-direction: column;
 
+main {
+  display: flex;
+  flex-direction: column;
 }
+
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
-    width: 100px;
-    height: 30px;
+  width: 100px;
+  height: 30px;
 }
 
 .scores > header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .row {
-    align-self: center;
-    display: flex;
-    width: 100%;
-    max-width: 1000px;
-    justify-content: space-between;
-    
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
 }
 
 .row > section {
-    min-width: 400px;
-    margin: 10px;
-    
+  min-width: 400px;
+  margin: 10px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #score-display {
-    border: 2px black solid;
+  border: 2px black solid;
 }
 
-#score-display > li:nth-child(even){
-    background-color: #dddddd;
+#score-display > li:nth-child(even) {
+  background-color: #ddd;
 }
 
 .input {
-    width: 30vw;
-    margin: 10px 0;
-    border: 1.5px black solid;
+  width: 30vw;
+  margin: 10px 0;
+  border: 1.5px black solid;
 }
