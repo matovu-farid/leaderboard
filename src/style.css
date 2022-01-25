@@ -43,6 +43,11 @@ ul {
 .form {
   display: flex;
   flex-direction: column;
+  width: 30vw;
+}
+
+.form > button {
+  align-self: flex-end;
 }
 
 #score-display {
@@ -54,7 +59,6 @@ ul {
 }
 
 .input {
-  width: 30vw;
   margin: 10px 0;
   border: 1.5px black solid;
 }
