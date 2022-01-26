@@ -1,4 +1,4 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import './style.css';
-import './leaderboard_api'
+import './leaderboard_api';
