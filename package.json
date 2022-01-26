@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/matovu-farid/To-Do-List#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.12",
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -42,11 +45,16 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "jest-localstorage-mock": "^2.4.18"
+    "core-js": "^3.20.3",
+    "jest-localstorage-mock": "^2.4.18",
+    "regenerator-runtime": "^0.13.9"
   },
   "jest": {
     "resetMocks": false,
-    "setupFiles": ["jest-localstorage-mock"]
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
   }
 }
