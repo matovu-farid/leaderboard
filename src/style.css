@@ -1,5 +1,8 @@
 body {
   width: 100vw;
+  font-size: 10px;
+  font-family: 'PT Serif', serif;
+  color: rgb(29, 17, 56);
 }
 
 main {
@@ -9,6 +12,11 @@ main {
 
 li {
   list-style-type: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: white;
+  background-color: rgb(29, 17, 56);
+  font-family: 'Inconsolata', monospace;
 }
 
 ul {
@@ -16,9 +24,27 @@ ul {
   padding: 0;
 }
 
+h1 {
+  font-size: 3rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .button {
   width: 100px;
   height: 30px;
+  background-color: rgb(29, 17, 56);
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .scores > header {
@@ -48,19 +74,29 @@ ul {
 
 .form > button {
   align-self: flex-end;
+
 }
 
 #score-display {
-  border: 2px black solid;
+  
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 #score-display > li:nth-child(even) {
-  background-color: #ddd;
+  background-color: rgb(88, 86, 86);
 }
 
 .input {
   margin: 10px 0;
-  border: 1.5px black solid;
+  outline-offset: 5px;
+  outline: 1.5px solid rgb(29, 17, 56);
+  margin: 15px 0;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 2px 0;
+  text-indent: 10px;
 }
 
 input::-webkit-outer-spin-button,
