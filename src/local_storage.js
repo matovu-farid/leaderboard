@@ -6,8 +6,8 @@ export default class LocalStorageManager {
 
     retrieve=() => {
       const serializedObject = window.localStorage.getItem('object');
-      const gameId = JSON.parse(serializedObject) || {};
-      return gameId;
+      const object = JSON.parse(serializedObject) || null;
+      return (object===null)?null:object.gameID;
     }
 }
 export const storage = new LocalStorageManager();
