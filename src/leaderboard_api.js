@@ -27,7 +27,18 @@ if(storage.retrieve()===null){
     createGame();
 }
 
+
+
 const scoreDisplay=() => document.querySelector('#score-display');
+const checkEmpty = ()=>{
+    if(scoreDisplay().innerHTML===''){
+        
+        const listItem = document.createElement('li')
+        listItem.textContent = 'No scores recorded';
+        scoreDisplay().appendChild(listItem)
+        
+    }
+}
 const displayScores=(scores)=> {
     scores.forEach(scoreObject => {
         const listItem = document.createElement('li')
@@ -47,9 +58,10 @@ const scoresUrl =()=>`${url}games/${storage.retrieve()}/scores/`;
 
  }
 
- const refresh = ()=>{
+ const refresh = async ()=>{
     scoreDisplay().innerHTML = ''
-    getScoreObjects()  
+    await getScoreObjects()
+    checkEmpty()  
  }
 
  const addRefresh = ()=>{
