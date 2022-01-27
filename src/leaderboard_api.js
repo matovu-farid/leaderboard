@@ -85,7 +85,7 @@ const addSubmit = () => {
       user: formData.get('user'),
       score: formData.get('score'),
     };
-    form.reset()
+    form.reset();
 
     postScore(object);
   });

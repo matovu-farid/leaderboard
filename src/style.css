@@ -36,7 +36,6 @@ h2 {
 
 section {
   position: relative;
-
 }
 
 section::before {
@@ -48,9 +47,9 @@ section::before {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 250ms ease-in;
-
 }
-section:hover::before{
+
+section:hover::before {
   transform: scaleX(1);
   transform-origin: right;
 }
@@ -75,7 +74,7 @@ section:hover::before{
 
 .button:hover {
   cursor: pointer;
-  filter:invert(80%);
+  filter: invert(80%);
 }
 
 .scores > header {
@@ -105,11 +104,9 @@ section:hover::before{
 
 .form > button {
   align-self: flex-end;
-
 }
 
 #score-display {
-  
   border-radius: 20px;
   overflow: hidden;
 }
@@ -120,7 +117,6 @@ section:hover::before{
 }
 
 .input {
-  margin: 10px 0;
   outline-offset: 5px;
   outline: 1.5px solid rgb(29, 17, 56);
   margin: 15px 0;
