@@ -34,6 +34,35 @@ h2 {
   font-weight: 700;
 }
 
+section {
+  position: relative;
+
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(29, 17, 56);
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+
+}
+section:hover::before{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.input-score {
+  padding-bottom: 2rem;
+}
+
+.input-score::before {
+  bottom: 0;
+}
+
 .button {
   width: 100px;
   height: 30px;
@@ -41,10 +70,12 @@ h2 {
   color: white;
   border: none;
   border-radius: 15px;
+  transition: filter 250ms ease-in;
 }
 
 .button:hover {
   cursor: pointer;
+  filter:invert(80%);
 }
 
 .scores > header {
@@ -84,7 +115,8 @@ h2 {
 }
 
 #score-display > li:nth-child(even) {
-  background-color: rgb(88, 86, 86);
+  /* background-color: rgb(88, 86, 86); */
+  filter: invert();
 }
 
 .input {
