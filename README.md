@@ -17,10 +17,12 @@ This project is a to-do-list app.
 
 ## Getting Started
 To get the content of this project locally you need to run this command in your terminal:
+```
 - git clone your https://github.com/matovu-farid/leaderboard.git
 - cd project leaderboard
 - npm install
 - npm start
+```
 
 ### Deployment
 This project is deployed on a github page on the link below:
